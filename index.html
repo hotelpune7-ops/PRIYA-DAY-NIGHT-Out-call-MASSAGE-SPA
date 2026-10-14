@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRIYA-DAY NIGHT Out Call MASSAGE SPA</title>
+<style>
+:root {
+--brown:#68432b; --brown2:#906343; --cream:#fbf7f1; --white:#fff;
+--text:#30251d; --muted:#75675c; --line:#e4d6c7; --green:#25d366;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:Arial,sans-serif;line-height:1.6}
+a{text-decoration:none}
+.wrap{width:92%;max-width:1120px;margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fffdf9ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{font:700 20px Georgia,serif;color:var(--brown)}
+nav{display:flex;gap:20px} nav a{color:var(--text);font-size:14px}
+.btn{display:inline-block;padding:11px 17px;border-radius:30px;border:1px solid var(--brown);color:var(--brown);background:white;font-weight:700;cursor:pointer}
+.btn.primary{background:var(--brown);color:white}
+.btn.wa{border-color:var(--green);color:#16853c}
+.btn.small{padding:9px 12px;font-size:12px;margin:4px 2px}
+.hero{min-height:640px;display:flex;align-items:center;color:white;
+background:linear-gradient(90deg,#352014ee,#35201499,#35201444),
+radial-gradient(circle at 80% 40%,#d6b18e,#70482f 48%,#25150d)}
+.hero h1{font:700 clamp(43px,7vw,76px)/1.02 Georgia,serif;margin:15px 0}
+.hero h1 span{color:#f1cfaa}
+.hero p{font-size:18px;max-width:680px;color:#f4e7dc}
+.eyebrow{letter-spacing:3px;color:#efd1b2;font-size:12px;text-transform:uppercase}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.section{padding:75px 0}
+.head{text-align:center;margin-bottom:35px}
+.head h2{font:700 42px Georgia,serif;color:var(--brown);margin:0 0 8px}
+.head p{color:var(--muted);max-width:650px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:20px;padding:23px;box-shadow:0 10px 30px #5b3a2010}
+.ico{font-size:28px;color:var(--brown2)}
+.card h3{color:var(--brown);margin:10px 0 5px}
+.card p{color:var(--muted);font-size:14px}
+.booking{background:#f1e2d3}
+form{max-width:800px;margin:auto;background:white;padding:25px;border:1px solid var(--line);border-radius:20px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:13px;font-weight:bold}
+input,select,textarea{width:100%;margin-top:6px;padding:13px;border:1px solid #d8c6b4;border-radius:10px;background:#fff}
+textarea{min-height:100px} .full{grid-column:1/-1}
+.stars{color:#b47d43;letter-spacing:2px} .review small{display:block;color:#988578;margin-top:4px}
+.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.map{min-height:270px;border-radius:20px;background:radial-gradient(circle,#d8b99b,#82593c);
+display:grid;place-items:center;text-align:center;color:white;padding:20px}
+footer{background:#382216;color:#ead8c8;text-align:center;padding:25px;font-size:13px}
+.float{position:fixed;right:18px;bottom:18px;z-index:30;display:grid;gap:10px}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px #0003;font-size:22px}
+.float .call{background:var(--brown);color:white} .float .wa{background:var(--green);color:#073d18}
+@media(max-width:800px){nav{display:none}.grid,.contactgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.grid,.contactgrid,.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.hero{min-height:580px}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home">PRIYA MASSAGE SPA</a>
+<nav><a href="#services">Services</a><a href="#booking">Booking</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<a class="btn primary" href="tel:+917498534659">☎ Call</a>
+</div></header>
+
+<section class="hero" id="home"><div class="wrap">
+<div class="eyebrow">Day & Night Wellness • Bengaluru</div>
+<h1>Relax your body.<br><span>Refresh your mind.</span></h1>
+<p>Welcome to PRIYA-DAY NIGHT Out Call MASSAGE SPA. Enjoy a comfortable wellness experience in BTM 1st Stage, Bengaluru.</p>
+<div class="actions">
+<a class="btn" href="#booking">📅 Book Appointment</a>
+<a class="btn wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book.">💬 WhatsApp</a>
+<a class="btn" href="tel:+917498534659">☎ Call 7498534659</a>
+</div></div></section>
+
+<section class="section" id="services"><div class="wrap">
+<div class="head"><h2>Our Services</h2><p>Choose your preferred wellness experience and book directly.</p></div>
+<div class="grid"><article class="card"><div class="ico">✦</div><h3>Swedish Massage</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Swedish Massage')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Swedish%20Massage">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Deep Tissue Massage</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Deep Tissue Massage')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Deep%20Tissue%20Massage">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Aromatherapy Massage</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Aromatherapy Massage')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Aromatherapy%20Massage">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Hot Stone Massage</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Hot Stone Massage')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Hot%20Stone%20Massage">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Balinese Massage</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Balinese Massage')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Balinese%20Massage">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Head Massage (Champi)</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Head Massage (Champi)')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Head%20Massage%20(Champi)">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Spa Facial</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Spa Facial')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Spa%20Facial">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Foot Reflexology</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Foot Reflexology')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Foot%20Reflexology">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Hand & Foot Spa</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Hand & Foot Spa')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Hand%20&%20Foot%20Spa">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Body Scrub / Polishing</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Body Scrub / Polishing')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Body%20Scrub%20/%20Polishing">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Body Wrap</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Body Wrap')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Body%20Wrap">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Couple Spa Package</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Couple Spa Package')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Couple%20Spa%20Package">💬 WhatsApp</a></article><article class="card"><div class="ico">✦</div><h3>Head to Toe Package</h3>
+<p>Relaxing wellness experience designed for comfort and rejuvenation.</p>
+<a class="btn small" href="#booking" onclick="setService('Head to Toe Package')">📅 Book</a>
+<a class="btn small wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book%20Head%20to%20Toe%20Package">💬 WhatsApp</a></article></div></div></section>
+
+<section class="section booking" id="booking"><div class="wrap">
+<div class="head"><h2>Booking Area</h2><p>Send your booking request directly on WhatsApp.</p></div>
+<form id="bookingForm"><div class="formgrid">
+<div><label>Name<input id="bn" required placeholder="Your name"></label></div>
+<div><label>Phone<input id="bp" required placeholder="Your phone number"></label></div>
+<div><label>Service<select id="bs"><option>Swedish Massage</option><option>Deep Tissue Massage</option><option>Aromatherapy Massage</option><option>Hot Stone Massage</option><option>Balinese Massage</option><option>Head Massage (Champi)</option><option>Spa Facial</option><option>Foot Reflexology</option><option>Hand & Foot Spa</option><option>Body Scrub / Polishing</option><option>Body Wrap</option><option>Couple Spa Package</option><option>Head to Toe Package</option></select></label></div>
+<div><label>Date<input id="bd" type="date"></label></div>
+<div><label>Time<input id="bt" type="time"></label></div>
+<div class="full"><label>Message<textarea id="bm" placeholder="Any special request?"></textarea></label></div>
+</div><div class="actions">
+<button class="btn primary" type="submit">📲 WhatsApp Booking</button>
+<a class="btn" href="tel:+917498534659">☎ Call to Book</a>
+</div></form></div></section>
+
+<section class="section" id="reviews"><div class="wrap">
+<div class="head"><h2>Guest Reviews</h2><p>Relaxation experiences from our guests.</p></div>
+<div class="grid"><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Rahul</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Neha</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Amit</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Pooja</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Sahil</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Anjali</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Rohan</strong><small>Guest Review</small></article><article class="card review"><div class="stars">★★★★★</div>
+<p>“A peaceful and relaxing spa experience with friendly service.”</p><strong>Kiran</strong><small>Guest Review</small></article></div></div></section>
+
+<section class="section" id="contact"><div class="wrap">
+<div class="head"><h2>Visit Us</h2><p>Call or WhatsApp for availability and bookings.</p></div>
+<div class="contactgrid">
+<article class="card"><h2>Contact</h2><p>📍 Shop No. 002, Aftek Software, 87, Hosur Rd, Zuzuvadi, Madiwala, 1st Stage, BTM 1st Stage, Bengaluru, Karnataka 560068</p><p>☎ <a href="tel:+917498534659">7498534659</a></p>
+<div class="actions"><a class="btn primary" href="tel:+917498534659">☎ Calling</a>
+<a class="btn wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book.">💬 WhatsApp</a></div></article>
+<div class="map">📍<br>Shop No. 002, Aftek Software, 87, Hosur Rd, Zuzuvadi, Madiwala, 1st Stage, BTM 1st Stage, Bengaluru, Karnataka 560068<br><br>
+<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=BTM+1st+Stage%2C+Bengaluru">Open Google Maps</a></div>
+</div></div></section>
+
+<div class="float">
+<a class="call" href="tel:+917498534659">☎</a>
+<a class="wa" target="_blank" href="https://wa.me/917498534659?text=Hello%20Priya%20Spa%2C%20I%20want%20to%20book.">◉</a>
+</div>
+<footer>© 2026 PRIYA-DAY NIGHT Out Call MASSAGE SPA • Bengaluru</footer>
+
+<script>
+function setService(x){document.getElementById('bs').value=x;document.getElementById('booking').scrollIntoView({behavior:'smooth'});}
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+let text='Hello Priya Massage Spa,%0A%0A*Booking Request*%0AName: '+encodeURIComponent(document.getElementById('bn').value)
++'%0APhone: '+encodeURIComponent(document.getElementById('bp').value)
++'%0AService: '+encodeURIComponent(document.getElementById('bs').value)
++'%0ADate: '+encodeURIComponent(document.getElementById('bd').value||'Not specified')
++'%0ATime: '+encodeURIComponent(document.getElementById('bt').value||'Not specified')
++'%0AMessage: '+encodeURIComponent(document.getElementById('bm').value||'None');
+window.open('https://wa.me/917498534659?text='+text,'_blank');
+});
+</script>
+</body></html>
